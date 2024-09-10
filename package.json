@@ -2,7 +2,7 @@
   "name": "translator-ad-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<tvoje_korisnicko_ime>.github.io/<ime_repozitorijuma>",
+  "homepage": "https://petro2323.github.io/translator-ad-project",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
