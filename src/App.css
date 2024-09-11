@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-link, .nav-dropdown, .nav-dropdown-item {
+  border-radius: 1rem;
+}
+
+.nav-link:hover, .nav-dropdown:hover .dropdown-toggle, .nav-dropdown-item:hover {
+  color: white;
+  background-color: #ff6347;
+}
+
+.nav-dropdown .dropdown-toggle::after {
+  display: none;
+}
