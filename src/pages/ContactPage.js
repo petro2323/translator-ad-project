@@ -97,7 +97,7 @@ export const ContactPage = () => {
                     <MDBCardBody className="d-flex justify-content-center">
                     <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, width: '100%', overflow: 'hidden', maxWidth: '100%' }}>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d520.3664410294654!2d18.5307450922566!3d42.45673664060223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzI0LjMiTiAxOMKwMzEnNTIuMSJF!5e0!3m2!1sen!2s!4v1726164626194!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d183.9770595453906!2d18.53094198167317!3d42.456825150113374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDI3JzI0LjMiTiAxOMKwMzEnNTIuMiJF!5e0!3m2!1sen!2s!4v1726168729002!5m2!1sen!2s"
                         width="100%"
                         height="100%"
                         style={{ border: 0, position: 'absolute', top: 0, left: 0 }}
