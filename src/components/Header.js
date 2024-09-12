@@ -40,7 +40,7 @@ const Header = () => {
             </NavDropDown>
             <Nav.Link href="#link">Cijenovnik</Nav.Link>
             <Nav.Link href="o-meni">O meni</Nav.Link>
-            <Nav.Link href="#link">Kontakt</Nav.Link>
+            <Nav.Link href="kontakt">Kontakt</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
