@@ -4,9 +4,44 @@ import Navbar from 'react-bootstrap/Navbar';
 import HeaderLogo from '../images/entrepreneur.png'
 import NavDropDown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 const Header = () => {
-    
+  
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollToSection = (section) => {
+    if (location.pathname !== "/usluge-prevodjenja") {
+      navigate("/usluge-prevodjenja");
+      setTimeout(() => {
+        scroller.scrollTo(section, {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 100);
+    } else {
+      scroller.scrollTo(section, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  };
+
+  const handleNavigateToServices = () => {
+    if (location.pathname !== "/usluge-prevodjenja") {
+      navigate("/usluge-prevodjenja");
+    } else {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+    }
+  };
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const mouseEnter = () => setShowDropdown(true);
@@ -31,12 +66,12 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">
             <Nav.Link href="/">Početna</Nav.Link>
-            <NavDropDown title="Usluge prevođenja" id="basic-nav-dropdown" show={showDropdown} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="nav-dropdown" onClick={() => window.location.href="#"}>
-              <NavDropDown.Item href="#" className='nav-dropdown-item'>Konsekutivni prevod</NavDropDown.Item>
-              <NavDropDown.Item href="#" className='nav-dropdown-item'>Simultani prevod</NavDropDown.Item>
-              <NavDropDown.Item href="#" className='nav-dropdown-item'>Ovjereni prevod</NavDropDown.Item>
-              <NavDropDown.Item href="#" className='nav-dropdown-item'>Neovjereni prevod</NavDropDown.Item>
-              <NavDropDown.Item href="#" className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
+            <NavDropDown title="Usluge prevođenja" id="basic-nav-dropdown" show={showDropdown} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="nav-dropdown" onClick={handleNavigateToServices}>
+              <NavDropDown.Item onClick={() => handleScrollToSection("konsekutivno-prevodjenje")} className='nav-dropdown-item'>Konsekutivno prevođenje</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleScrollToSection("simultano-prevodjenje")} className='nav-dropdown-item'>Simultano prevođenje</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleScrollToSection("ovjeren-prevod")} className='nav-dropdown-item'>Ovjeren prevod</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleScrollToSection("neovjereni-prevod")} className='nav-dropdown-item'>Neovjereni prevod</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleScrollToSection("strucni-prevodi")} className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
             </NavDropDown>
             <Nav.Link href="#link">Cijenovnik</Nav.Link>
             <Nav.Link href="o-meni">O meni</Nav.Link>
