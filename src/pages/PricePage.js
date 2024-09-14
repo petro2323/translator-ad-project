@@ -22,7 +22,7 @@ export const PricePage = () => {
                         <MDBRow>
                                 <MDBCol>
                                     <MDBCardTitle className="fs-3">
-                                        <b><MDBIcon fas icon="coins" /> Cijenovnik</b>
+                                        <b><MDBIcon fas icon="coins" /> Cjenovnik</b>
                                     </MDBCardTitle>
                                 </MDBCol>
                         </MDBRow>

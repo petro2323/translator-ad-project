@@ -29,7 +29,7 @@ export const ContactPage = () => {
                     />
                     
                     <div className="d-flex justify-content-center mb-5 mt-4">
-                    <a href="mailto:aldra@t-com.me" className="btn btn-outline-primary">Pošaljite mejl</a>
+                    <a href="mailto:aldra@t-com.me" className="btn btn-outline-primary">Pošaljite e-poštu</a>
                     </div>
 
                     <div className="d-flex justify-content-center mb-4">
@@ -64,7 +64,7 @@ export const ContactPage = () => {
                 <hr />
                 <MDBRow>
                   <MDBCol sm="3">
-                    <MDBCardText>E-mejl</MDBCardText>
+                    <MDBCardText>E-pošta</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
                     <MDBCardText className="text-muted">aldra@t-com.me</MDBCardText>

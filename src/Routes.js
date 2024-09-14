@@ -18,7 +18,7 @@ export const AppRoutes = () => {
                 <Route path="o-meni" element={<AboutMePage />} />
                 <Route path="kontakt" element={<ContactPage />} />
                 <Route path="usluge-prevodjenja" element={<TranslationServicesPage /> }/>
-                <Route path="cijenovnik" element={<PricePage /> }/>
+                <Route path="cjenovnik" element={<PricePage /> }/>
             </Routes>
         </Router>
     );
