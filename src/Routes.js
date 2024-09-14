@@ -5,6 +5,7 @@ import { IndexPage } from './pages/IndexPage';
 import { AboutMePage } from './pages/AboutMePage';
 import { ContactPage } from './pages/ContactPage';
 import { TranslationServicesPage } from './pages/TranslationServicesPage';
+import { PricePage } from './pages/PricePage';
 
 export const AppRoutes = () => {
     return (
@@ -17,6 +18,7 @@ export const AppRoutes = () => {
                 <Route path="o-meni" element={<AboutMePage />} />
                 <Route path="kontakt" element={<ContactPage />} />
                 <Route path="usluge-prevodjenja" element={<TranslationServicesPage /> }/>
+                <Route path="cijenovnik" element={<PricePage /> }/>
             </Routes>
         </Router>
     );

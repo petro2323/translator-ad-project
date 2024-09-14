@@ -35,7 +35,7 @@ export const NotFoundPage = () => {
                         <MDBRow>
                             <MDBCol>
                             <div className="d-flex justify-content-center mt-4">
-                                <a href="/" class="btn btn-outline-primary">Glavna stranica</a>
+                                <a href="/" className="btn btn-outline-primary">Glavna stranica</a>
                             </div>
                             </MDBCol>
                         </MDBRow>
