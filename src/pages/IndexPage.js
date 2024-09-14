@@ -17,9 +17,9 @@ export const IndexPage = () => {
       <MDBContainer className="py-5">
         <MDBRow className="justify-content-center align-items-center text-center mb-5" style={{ height: '40vh' }}>
           <MDBCol lg="8">
-            <h1>Profesionalne Usluge Prevođenja</h1>
+            <h1>Profesionalne prevodilačke usluge</h1>
             <p className="lead text-muted">
-              Prevodim i ovjeravam sve vrste tekstova, sa dugogodišnjim iskustvom kao sudski tumač za engleski jezik.
+            Kao sudski tumač za engleski jezik sa dugogodišnjim iskustvom, prevodim i ovjeravam sve vrste tekstova i dokumenata
             </p>
 
             <div className="d-flex justify-content-center">
@@ -35,7 +35,7 @@ export const IndexPage = () => {
                 <MDBIcon fas icon="globe" size="3x" className="mb-3" />
                 <MDBCardTitle>Usluge prevođenja</MDBCardTitle>
                 <MDBCardText>
-                  Brze i precizne usluge prevođenja svih vrsta tekstova, dokumenata i audio materijala.
+                Brze i precizne usluge prevođenja svih vrsta tekstova, dokumenata i audio materijala
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
                   <a href="/usluge-prevodjenja" className="btn btn-outline-primary">Saznajte više</a>
@@ -49,7 +49,7 @@ export const IndexPage = () => {
                 <MDBIcon fas icon="coins" size="3x" className="mb-3" />
                 <MDBCardTitle>Cjenovnik</MDBCardTitle>
                 <MDBCardText>
-                  Pristupačne cene i fleksibilni paketi za različite potrebe prevodilačkih usluga.
+                Pristupačne cijene i fleksibilni paketi za širok spektar prevodilačkih usluga  
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
                   <a href="/cjenovnik" className="btn btn-outline-primary">Saznajte više</a>
@@ -68,7 +68,7 @@ export const IndexPage = () => {
               />
                 <MDBCardTitle>O meni</MDBCardTitle>
                 <MDBCardText>
-                  Iskusan sudski tumač sa više od 30 godina iskustva u prevođenju i sudskim uslugama.
+                Iskusan prevodilac i sudski tumač za engleski jezik sa više od 30 godina iskustva
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
                   <a href="/o-meni" className="btn btn-outline-primary">Saznajte više</a>
