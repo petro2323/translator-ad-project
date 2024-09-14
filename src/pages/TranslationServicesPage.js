@@ -50,7 +50,7 @@ export const TranslationServicesPage = () => {
                         <hr />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="file-alt" /> Stručni prevodi</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="file-alt" /> Stručni prevodi</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -86,7 +86,7 @@ export const TranslationServicesPage = () => {
                         <hr />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="stamp" /> Ovjeren prevod</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="stamp" /> Ovjeren prevod</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -125,7 +125,7 @@ export const TranslationServicesPage = () => {
                         <hr />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="file" /> Neovjereni prevod</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="file" /> Neovjereni prevod</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -137,7 +137,7 @@ export const TranslationServicesPage = () => {
                         <br />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText className="text-muted"><h5><b>Prevodim:</b></h5></MDBCardText>
+                                    <MDBCardText className="text-muted"><b>Prevodim:</b></MDBCardText>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -156,13 +156,13 @@ export const TranslationServicesPage = () => {
                         <hr />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText className="text-muted"><h6><b>Po potrebi pružam usluge simultanog i konsekutivnog prevođenja.</b></h6></MDBCardText>
+                                    <MDBCardText className="text-muted"><b>Po potrebi pružam usluge simultanog i konsekutivnog prevođenja.</b></MDBCardText>
                                 </MDBCol>
                         </MDBRow>
                         <br />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="microphone-alt" /> Simultano prevođenje</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="microphone-alt" /> Simultano prevođenje</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -193,7 +193,7 @@ export const TranslationServicesPage = () => {
                         <br />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="comments" /> Konsekutivno prevođenje</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="comments" /> Konsekutivno prevođenje</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />
@@ -223,7 +223,7 @@ export const TranslationServicesPage = () => {
                         <br />
                         <MDBRow>
                                 <MDBCol>
-                                    <MDBCardText><h4><b><MDBIcon fas icon="question-circle" /> Razlika između simultanog i konsekutivnog prevođenja</b></h4></MDBCardText>
+                                    <h4><b><MDBIcon fas icon="question-circle" /> Razlika između simultanog i konsekutivnog prevođenja</b></h4>
                                 </MDBCol>
                         </MDBRow>
                         <br />

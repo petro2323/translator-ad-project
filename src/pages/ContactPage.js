@@ -29,7 +29,7 @@ export const ContactPage = () => {
                     />
                     
                     <div className="d-flex justify-content-center mb-5 mt-4">
-                    <a href="mailto:aldra@t-com.me" class="btn btn-outline-primary">Pošaljite mejl</a>
+                    <a href="mailto:aldra@t-com.me" className="btn btn-outline-primary">Pošaljite mejl</a>
                     </div>
 
                     <div className="d-flex justify-content-center mb-4">
