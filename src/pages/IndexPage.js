@@ -9,11 +9,25 @@ import {
   MDBIcon,
   MDBCardImage
 } from 'mdb-react-ui-kit';
-import UserIcon from '../images/04-Dragana-Petronijevic.jpg'
+import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
+import Logo from '../images/logo-dragana-petronijevic.png'
+import { Helmet } from 'react-helmet';
 
 export const IndexPage = () => {
   return (
     <section style={{ backgroundColor: '#eee' }}>
+      <Helmet>
+        <title>Dragana Petronijević - Sudski tumač za engleski jezik</title>
+
+        <meta name="description" content="Dragana Petronijević - Iskusan sudski tumač i prevodilac za engleski jezik sa više od 30 godina iskustva, specijalizovana za ovjerene i neovjerene prevode, kao i simultano i konsekutivno prevođenje." />
+        <meta name="keywords" content="prevodilac, sudski tumač, tumač, engleski jezik, crnogorski jezik, prevođenje, ovjereni prevodi, neovjereni prevodi, prevodilac Herceg Novi, prevodilac Podgorica, prevodilac Crna Gora, sudski tumač Herceg Novi, sudski tumač Podgorica, sudski tumač Crna Gora, prevodi, prevodioci, simultano prevođenje, konsekutivno prevođenje, stručni prevodi" />
+
+        <meta property="og:url" content="https://www.draganapetronijevic.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Dragana Petronijević - Sudski tumač za engleski jezik" />
+        <meta property="og:description" content="Iskusan sudski tumač i prevodilac za engleski jezik sa više od 30 godina iskustva, specijalizovana za ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
+        <meta property="og:image" content={Logo} />
+      </Helmet>
       <MDBContainer className="py-5">
         <MDBRow className="justify-content-center align-items-center text-center mb-5" style={{ height: '40vh' }}>
           <MDBCol lg="8">
