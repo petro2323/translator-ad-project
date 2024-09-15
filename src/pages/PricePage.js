@@ -11,7 +11,6 @@ import {
     MDBCardTitle
   } from 'mdb-react-ui-kit';
 import { Helmet } from 'react-helmet-async';
-import Logo from '../images/logo-dragana-petronijevic.png';
 import { NavLink } from 'react-router-dom';
 
 export const PricePage = () => {
@@ -27,7 +26,7 @@ export const PricePage = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Cjenovnik - Dragana Petronijević, Sudski tumač za engleski jezik" />
                 <meta property="og:description" content="Pregled cjenovnika usluga prevođenja. Saznajte cijene za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
-                <meta property="og:image" content={Logo} />
+                <meta property="og:image" content="https://www.draganapetronijevic.com/static/media/logo-dragana-petronijevic.7b007d075fdcb23edddb.png" />
             </Helmet>
       <MDBContainer className="py-5">
         <MDBRow>
