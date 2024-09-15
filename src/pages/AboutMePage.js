@@ -11,7 +11,7 @@ import {
   } from 'mdb-react-ui-kit';
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
 import { Helmet } from 'react-helmet-async';
-import { Icon } from '../images/logo-dragana-petronijevic.png'
+import Icon from '../images/logo-dragana-petronijevic.png'
 
 
 export const AboutMePage = () => {
