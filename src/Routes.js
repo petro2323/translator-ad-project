@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -22,8 +23,6 @@ const RouteHandler = () => {
             navigate('/nf');
         }
     }, [location, navigate]);
-
-    return null;
 };
 
 export const AppRoutes = () => {
