@@ -5,6 +5,7 @@ import {
     MDBCol,
     MDBIcon
   } from 'mdb-react-ui-kit';
+  import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -21,9 +22,9 @@ const Footer = () => {
           <MDBCol md="4">
             <h5>Korisni linkovi</h5>
             <ul className="list-unstyled">
-              <li><a href="/usluge-prevodjenja" style={{ color: '#fff' }}>Usluge prevođenja</a></li>
-              <li><a href="/cjenovnik" style={{ color: '#fff' }}>Cjenovnik</a></li>
-              <li><a href="/o-meni" style={{ color: '#fff' }}>O meni</a></li>
+              <li><NavLink to="/usluge-prevodjenja" className="nav-link" style={{ color: '#fff' }}>Usluge prevođenja</NavLink></li>
+              <li><NavLink to="/cjenovnik" className="nav-link" style={{ color: '#fff' }}>Cjenovnik</NavLink></li>
+              <li><NavLink to="/o-meni" className="nav-link" style={{ color: '#fff' }}>O meni</NavLink></li>
             </ul>
           </MDBCol>
 

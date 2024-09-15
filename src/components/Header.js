@@ -74,8 +74,8 @@ const Header = () => {
               <NavDropDown.Item onClick={() => handleScrollToSection("strucni-prevodi")} className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
             </NavDropDown>
             <Nav.Link as={NavLink} to="/cjenovnik">Cjenovnik</Nav.Link>
-            <Nav.Link href="o-meni">O meni</Nav.Link>
-            <Nav.Link href="kontakt">Kontakt</Nav.Link>
+            <Nav.Link as={NavLink} to="/o-meni">O meni</Nav.Link>
+            <Nav.Link as={NavLink} to="/kontakt">Kontakt</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
