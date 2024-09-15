@@ -11,7 +11,6 @@ import {
   } from 'mdb-react-ui-kit';
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
 import { Helmet } from 'react-helmet-async';
-import Icon from '../images/logo-dragana-petronijevic.png'
 
 
 export const AboutMePage = () => {
@@ -22,8 +21,6 @@ export const AboutMePage = () => {
 
           <meta name="description" content="Saznajte više o Dragani Petronijević, sudskom tumaču i prevodiocu za engleski jezik sa više od 30 godina iskustva, specijalizovana za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
           <meta name="keywords" content="dragana petronijevic, sudski tumač, prevodilac, o meni, iskustvo, prevođenje, ovjereni prevodi, neovjereni prevodi, engleski jezik, crnogorski jezik, strucni prevodi, simultano prevođenje, konsekutivno prevođenje" />
-
-          <meta property="og:image" content={Icon} />
       </Helmet>
         <MDBContainer className="py-5">
           <MDBRow>
