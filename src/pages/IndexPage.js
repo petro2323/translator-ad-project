@@ -12,6 +12,7 @@ import {
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
 import Logo from '../images/logo-dragana-petronijevic.png'
 import { Helmet } from 'react-helmet-async';
+import { NavLink } from 'react-router-dom';
 
 export const IndexPage = () => {
   return (
