@@ -12,6 +12,7 @@ import {
   } from 'mdb-react-ui-kit';
 import { Helmet } from 'react-helmet-async';
 import Logo from '../images/logo-dragana-petronijevic.png';
+import { NavLink } from 'react-router-dom';
 
 export const PricePage = () => {
     return(
@@ -103,7 +104,7 @@ export const PricePage = () => {
                         <br />
                         <MDBRow>
                             <MDBCol>
-                                <MDBCardText className="text-muted"><b>Za visinu nagrade u konkretnom slučaju, obratite se <a href="/kontakt">telefonom ili putem e-pošte.</a></b></MDBCardText>
+                                <MDBCardText className="text-muted"><b>Za visinu nagrade u konkretnom slučaju, obratite se <NavLink to="/kontakt" className="text-decoration-underline">telefonom ili putem e-pošte.</NavLink></b></MDBCardText>
                             </MDBCol>
                         </MDBRow>
                     </MDBCardBody>
