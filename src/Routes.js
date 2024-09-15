@@ -14,7 +14,7 @@ export const AppRoutes = () => {
             <Header />
 
             <Routes>
-                <Route path="*" element={<NotFoundPage />} />
+                <Route path="not-found" element={<NotFoundPage />} />
                 <Route path="/" element={<IndexPage />} />
                 <Route path="o-meni" element={<AboutMePage />} />
                 <Route path="kontakt" element={<ContactPage />} />
