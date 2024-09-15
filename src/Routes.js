@@ -20,7 +20,7 @@ const RouteHandler = () => {
     useEffect(() => {
         const path = location.pathname;
         if (!validRoutes.includes(path)) {
-            navigate('/nf');
+            navigate('/nepoznato');
         }
     }, [location, navigate]);
 };
