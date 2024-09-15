@@ -9,6 +9,7 @@ import {
     MDBCardText,
     MDBCardBody
   } from 'mdb-react-ui-kit';
+  import { Helmet } from 'react-helmet-async';
 
 export const NotFoundPage = () => {
     const location = useLocation();
@@ -19,6 +20,10 @@ export const NotFoundPage = () => {
     
     return (
         <section style={{ backgroundColor: '#eee', height: '75vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Helmet>
+                <title>Greška 404</title>
+                <meta property="og:image" content="url" />
+            </Helmet>
             <MDBContainer className="py-5">
                 <MDBRow className="justify-content-center align-items-center" style={{ height: '100%' }}>
                 <MDBCol lg="4">

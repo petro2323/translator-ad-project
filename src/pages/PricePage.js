@@ -10,10 +10,24 @@ import {
     MDBListGroupItem,
     MDBCardTitle
   } from 'mdb-react-ui-kit';
+import { Helmet } from 'react-helmet-async';
+import Logo from '../images/logo-dragana-petronijevic.png';
 
 export const PricePage = () => {
     return(
         <section style={{ backgroundColor: '#eee' }}>
+            <Helmet>
+                <title>Cjenovnik - Dragana Petronijević</title>
+
+                <meta name="description" content="Cjenovnik usluga prevođenja Dragane Petronijević, sudskog tumača za engleski jezik. Pronađite cijene za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
+                <meta name="keywords" content="dragana petronijevic, cjenovnik, cijene prevođenja, prevodilac, sudski tumač, ovjereni prevodi, neovjereni prevodi, simultano prevođenje, konsekutivno prevođenje, cjenovnik prevoda, sudski tumač" />
+
+                <meta property="og:url" content="https://www.draganapetronijevic.com/cjenovnik" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Cjenovnik - Dragana Petronijević, Sudski tumač za engleski jezik" />
+                <meta property="og:description" content="Pregled cjenovnika usluga prevođenja. Saznajte cijene za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
+                <meta property="og:image" content={Logo} />
+            </Helmet>
       <MDBContainer className="py-5">
         <MDBRow>
           <MDBCol lg="12">

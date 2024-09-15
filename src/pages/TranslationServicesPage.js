@@ -11,11 +11,25 @@ import {
     MDBCardTitle
   } from 'mdb-react-ui-kit';
   import { Element } from 'react-scroll';
+  import Logo from '../images/logo-dragana-petronijevic.png'
+  import { Helmet } from 'react-helmet-async';
 
 export const TranslationServicesPage = () => {
   
     return (
     <section style={{ backgroundColor: '#eee' }}>
+      <Helmet>
+        <title>Usluge prevođenja - Dragana Petronijević</title>
+
+        <meta name="description" content="Dragana Petronijević - Usluge prevođenja stručnih, ovjerenih i neovjerenih prevoda, simultanog i konsekutivnog prevođenja." />
+        <meta name="keywords" content="dragana petronijevic, usluge prevođenja, prevodilac, sudski tumač, tumač, engleski jezik, crnogorski jezik, stručni prevodi, ovjereni prevodi, neovjereni prevodi, simultano prevođenje, konsekutivno prevođenje" />
+
+        <meta property="og:url" content="https://www.draganapetronijevic.com/usluge-prevodjenja" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Usluge prevođenja - Dragana Petronijević, Sudski tumač za engleski jezik" />
+        <meta property="og:description" content="Pružam usluge stručnih, ovjerenih i neovjerenih prevoda, kao i simultanog i konsekutivnog prevođenja. Preko 30 godina iskustva kao sudski tumač za engleski jezik." />
+        <meta property="og:image" content={Logo} />
+    </Helmet>
       <MDBContainer className="py-5">
         <MDBRow>
           <MDBCol lg="12">

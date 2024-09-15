@@ -10,11 +10,25 @@ import {
     MDBListGroupItem
   } from 'mdb-react-ui-kit';
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
+import Logo from '../images/logo-dragana-petronijevic.png'
+import { Helmet } from 'react-helmet-async';
 
 
 export const AboutMePage = () => {
     return (
       <section style={{ backgroundColor: '#eee' }}>
+        <Helmet>
+          <title>O meni - Dragana Petronijević</title>
+
+          <meta name="description" content="Saznajte više o Dragani Petronijević, sudskom tumaču i prevodiocu za engleski jezik sa više od 30 godina iskustva, specijalizovana za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
+          <meta name="keywords" content="dragana petronijevic, sudski tumač, prevodilac, o meni, iskustvo, prevođenje, ovjereni prevodi, neovjereni prevodi, engleski jezik, crnogorski jezik, strucni prevodi, simultano prevođenje, konsekutivno prevođenje" />
+
+          <meta property="og:url" content="https://www.draganapetronijevic.com/o-meni" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="O meni - Dragana Petronijević" />
+          <meta property="og:description" content="Dragana Petronijević je sudski tumač i prevodilac za engleski jezik sa više od 30 godina iskustva, pruža usluge stručnih prevoda, ovjerenih i neovjerenih prevoda, kao i simultanog i konsekutivnog prevođenja." />
+          <meta property="og:image" content={Logo} />
+      </Helmet>
         <MDBContainer className="py-5">
           <MDBRow>
             <MDBCol lg="12">

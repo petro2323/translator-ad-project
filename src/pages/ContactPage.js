@@ -10,10 +10,25 @@ import {
   } from 'mdb-react-ui-kit';
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Logo from '../images/logo-dragana-petronijevic.png'
+import { Helmet } from 'react-helmet-async';
 
 export const ContactPage = () => {
     return(
         <section style={{ backgroundColor: '#eee' }}>
+          <Helmet>
+            <title>Kontakt - Dragana Petronijević</title>
+
+            <meta name="description" content="Kontaktirajte Draganu Petronijević, sudskog tumača i prevodioca za engleski jezik. Preko 30 godina iskustva u prevođenju i ovjeri dokumenata. Nalazimo se u Herceg Novom i Podgorici." />
+            <meta name="keywords" content="kontakt, dragana petronijevic, sudski tumač, prevodilac, engleski jezik, prevođenje, ovjereni prevodi, neovjereni prevodi, strucni prevodi, simultano prevođenje, konsekutivno prevođenje, Herceg Novi, Podgorica" />
+
+            <meta property="og:url" content="https://www.draganapetronijevic.com/kontakt" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Kontakt - Dragana Petronijević" />
+            <meta property="og:description" content="Kontaktirajte Draganu Petronijević za usluge prevođenja. Nalazimo se u Herceg Novom i Podgorici." />
+            <meta property="og:image" content={Logo} />
+        </Helmet>
+
       <MDBContainer className="py-5">
 
         <MDBRow>
