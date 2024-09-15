@@ -1,5 +1,4 @@
-import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -9,28 +8,10 @@ import { ContactPage } from './pages/ContactPage';
 import { TranslationServicesPage } from './pages/TranslationServicesPage';
 import { PricePage } from './pages/PricePage';
 
-const validRoutes = [
-    "/", "/o-meni", "/kontakt", "/usluge-prevodjenja", "/cjenovnik"
-];
-
-const RouteHandler = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const path = location.pathname;
-        if (!validRoutes.includes(path)) {
-            navigate('/nepoznato');
-        }
-    }, [location, navigate]);
-};
-
 export const AppRoutes = () => {
     return (
         <Router>
             <Header />
-
-            <RouteHandler />
 
             <Routes>
                 <Route path="nepoznato" element={<NotFoundPage />} />
