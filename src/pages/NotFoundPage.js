@@ -22,7 +22,6 @@ export const NotFoundPage = () => {
         <section style={{ backgroundColor: '#eee', height: '75vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Helmet>
                 <title>Greška 404</title>
-                <meta property="og:image" content="url" />
             </Helmet>
             <MDBContainer className="py-5">
                 <MDBRow className="justify-content-center align-items-center" style={{ height: '100%' }}>

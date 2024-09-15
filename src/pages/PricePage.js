@@ -21,12 +21,6 @@ export const PricePage = () => {
 
                 <meta name="description" content="Cjenovnik usluga prevođenja Dragane Petronijević, sudskog tumača za engleski jezik. Pronađite cijene za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
                 <meta name="keywords" content="dragana petronijevic, cjenovnik, cijene prevođenja, prevodilac, sudski tumač, ovjereni prevodi, neovjereni prevodi, simultano prevođenje, konsekutivno prevođenje, cjenovnik prevoda, sudski tumač" />
-
-                <meta property="og:url" content="https://www.draganapetronijevic.com/cjenovnik" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Cjenovnik - Dragana Petronijević, Sudski tumač za engleski jezik" />
-                <meta property="og:description" content="Pregled cjenovnika usluga prevođenja. Saznajte cijene za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
-                <meta property="og:image" content="https://www.draganapetronijevic.com/static/media/logo-dragana-petronijevic.7b007d075fdcb23edddb.png" />
             </Helmet>
       <MDBContainer className="py-5">
         <MDBRow>
