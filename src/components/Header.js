@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import HeaderLogo from '../images/entrepreneur.png'
 import NavDropDown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, NavLink } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 
 const Header = () => {
