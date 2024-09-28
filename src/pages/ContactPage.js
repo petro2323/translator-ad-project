@@ -22,7 +22,7 @@ export const ContactPage = () => {
             <meta name="keywords" content="kontakt, dragana petronijevic, sudski tumač, prevodilac, engleski jezik, prevođenje, ovjereni prevodi, neovjereni prevodi, strucni prevodi, simultano prevođenje, konsekutivno prevođenje, Herceg Novi, Podgorica" />
         </Helmet>
 
-      <MDBContainer className="py-5">
+      <MDBContainer className="py-5" style={{ minHeight: '60vh' }}>
 
         <MDBRow>
           <MDBCol lg="3">
