@@ -19,3 +19,8 @@
   transform: scale(1.5);
   transition: transform 0.3s ease-in-out;
 }
+
+.about-text {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}

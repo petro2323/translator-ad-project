@@ -17,9 +17,9 @@ export const IndexPage = () => {
   return (
     <section style={{ backgroundColor: '#eee' }}>
       <Helmet>
-        <title>Dragana Petronijević - Sudski tumač za engleski jezik</title>
+        <title>Dragana Petronijević - Sudski tumač za engleski jezik | Herceg Novi</title>
 
-        <meta name="description" content="Dragana Petronijević - Iskusan sudski tumač i prevodilac za engleski jezik sa više od 30 godina iskustva, specijalizovana za ovjerene i neovjerene prevode, kao i simultano i konsekutivno prevođenje." />
+        <meta name="description" content="Dragana Petronijević – sudski tumač za engleski jezik u Herceg Novom sa preko 30 godina iskustva. Ovjereni i neovjereni prevodi, simultano i konsekutivno prevođenje." />
         <meta name="keywords" content="dragana petronijevic, prevodilac, sudski tumač, tumač, engleski jezik, crnogorski jezik, prevođenje, ovjereni prevodi, neovjereni prevodi, prevodilac Herceg Novi, prevodilac Podgorica, prevodilac Crna Gora, sudski tumač Herceg Novi, sudski tumač Podgorica, sudski tumač Crna Gora, prevodi, prevodioci, simultano prevođenje, konsekutivno prevođenje, stručni prevodi" />
       </Helmet>
       <MDBContainer className="py-5">

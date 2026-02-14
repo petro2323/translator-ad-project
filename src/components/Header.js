@@ -11,22 +11,25 @@ const Header = () => {
   
   const navigate = useNavigate();
   const location = useLocation();
+  const offsetValue = window.innerWidth <= 1024 ? -400 : 0;
 
   const handleScrollToSection = (section) => {
     if (location.pathname !== "/usluge-prevodjenja") {
       navigate("/usluge-prevodjenja");
       setTimeout(() => {
         scroller.scrollTo(section, {
-          duration: 800,
+          duration: 0,
           delay: 0,
           smooth: "easeInOutQuart",
+          offset: offsetValue
         });
       }, 100);
     } else {
       scroller.scrollTo(section, {
-        duration: 800,
+        duration: 0,
         delay: 0,
         smooth: "easeInOutQuart",
+        offset: offsetValue
       });
     }
   };
@@ -42,13 +45,26 @@ const Header = () => {
     }
   };
 
+  const handleItemClick = (section) => {
+    handleScrollToSection(section);
+    setShowDropdown(false);
+    setExpanded(false);
+  };
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const mouseEnter = () => setShowDropdown(true);
   const mouseLeave = () => setShowDropdown(false);
+  const [expanded, setExpanded] = useState(false);
   
   return (
-        <Navbar expand="lg" className="bg-body-tertiary sticky-top">
+        <Navbar
+          expand="lg"
+          expanded={expanded}
+          onToggle={() => setExpanded(!expanded)}
+          className="bg-body-tertiary sticky-top"
+        >
+
       <Container>
         <Navbar.Brand href="/" className="d-flex align-items-center">
         <img
@@ -67,15 +83,15 @@ const Header = () => {
           <Nav className="ms-auto text-center">
             <Nav.Link href="/">Početna</Nav.Link>
             <NavDropDown title="Usluge prevođenja" id="basic-nav-dropdown" show={showDropdown} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="nav-dropdown" onClick={handleNavigateToServices}>
-              <NavDropDown.Item onClick={() => handleScrollToSection("konsekutivno-prevodjenje")} className='nav-dropdown-item'>Konsekutivno prevođenje</NavDropDown.Item>
-              <NavDropDown.Item onClick={() => handleScrollToSection("simultano-prevodjenje")} className='nav-dropdown-item'>Simultano prevođenje</NavDropDown.Item>
-              <NavDropDown.Item onClick={() => handleScrollToSection("ovjeren-prevod")} className='nav-dropdown-item'>Ovjeren prevod</NavDropDown.Item>
-              <NavDropDown.Item onClick={() => handleScrollToSection("neovjereni-prevod")} className='nav-dropdown-item'>Neovjereni prevod</NavDropDown.Item>
-              <NavDropDown.Item onClick={() => handleScrollToSection("strucni-prevodi")} className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleItemClick("konsekutivno-prevodjenje")} className='nav-dropdown-item'>Konsekutivno prevođenje</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleItemClick("simultano-prevodjenje")} className='nav-dropdown-item'>Simultano prevođenje</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleItemClick("ovjeren-prevod")} className='nav-dropdown-item'>Ovjeren prevod</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleItemClick("neovjereni-prevod")} className='nav-dropdown-item'>Neovjereni prevod</NavDropDown.Item>
+              <NavDropDown.Item onClick={() => handleItemClick("strucni-prevodi")} className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
             </NavDropDown>
-            <Nav.Link as={NavLink} to="/cjenovnik">Cjenovnik</Nav.Link>
-            <Nav.Link as={NavLink} to="/o-meni">O meni</Nav.Link>
-            <Nav.Link as={NavLink} to="/kontakt">Kontakt</Nav.Link>
+            <Nav.Link as={NavLink} to="/cjenovnik" onClick={() => setExpanded(false)}>Cjenovnik</Nav.Link>
+            <Nav.Link as={NavLink} to="/o-meni" onClick={() => setExpanded(false)}>O meni</Nav.Link>
+            <Nav.Link as={NavLink} to="/kontakt" onClick={() => setExpanded(false)}>Kontakt</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

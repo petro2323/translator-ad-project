@@ -1,87 +1,107 @@
 import {
-    MDBCol,
-    MDBContainer,
-    MDBRow,
-    MDBCard,
-    MDBCardText,
-    MDBCardBody,
-    MDBCardImage,
-    MDBListGroup,
-    MDBListGroupItem
-  } from 'mdb-react-ui-kit';
+  MDBCol,
+  MDBContainer,
+  MDBRow,
+  MDBCard,
+  MDBCardText,
+  MDBCardBody,
+  MDBCardImage,
+  MDBListGroup,
+  MDBListGroupItem
+} from 'mdb-react-ui-kit';
 import UserIcon from '../images/04-Dragana-Petronijevic.jpg';
 import { Helmet } from 'react-helmet-async';
 
-
 export const AboutMePage = () => {
-    return (
-      <section style={{ backgroundColor: '#eee' }}>
-        <Helmet>
-          <title>O meni - Dragana Petronijević</title>
-
-          <meta name="description" content="Saznajte više o Dragani Petronijević, sudskom tumaču i prevodiocu za engleski jezik sa više od 30 godina iskustva, specijalizovana za stručne prevode, ovjerene i neovjerene prevode, simultano i konsekutivno prevođenje." />
-          <meta name="keywords" content="dragana petronijevic, sudski tumač, prevodilac, o meni, iskustvo, prevođenje, ovjereni prevodi, neovjereni prevodi, engleski jezik, crnogorski jezik, strucni prevodi, simultano prevođenje, konsekutivno prevođenje" />
+  return (
+    <section className="py-5 bg-light">
+      <Helmet>
+        <title>O meni - Dragana Petronijević</title>
+        <meta
+          name="description"
+          content="Saznajte više o Dragani Petronijević, sudskom tumaču i prevodiocu za engleski jezik sa više od 30 godina iskustva u stručnim, ovjerenim i konferencijskim prevodima."
+        />
       </Helmet>
-        <MDBContainer className="py-5">
-          <MDBRow>
-            <MDBCol lg="12">
-              <MDBCard className="mb-4">
-                <MDBCardBody className="d-flex align-items-center">
-                  <MDBCardImage
-                    src={UserIcon}
-                    alt="Dragana Petronijević"
-                    className="rounded-circle"
-                    style={{ width: '150px', marginRight: '20px' }}
-                    fluid
-                  />
-                  <div>
-                    <h4 className="text-center"><b>O meni</b></h4>
-                    <MDBCardText className="text-muted">
-                      <b>Zovem se Dragana Petronijević.</b> Prevodilac sam i sudski tumač za engleski jezik već više od tri decenije. Diplomirala sam na Filološkom fakultetu Univerziteta u Sarajevu, gdje sam stekla stručni naziv profesora engleskog jezika i književnosti.
-                    </MDBCardText>
-                  </div>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-  
-            <MDBCol lg="12">
-              <MDBCard className="mb-4">
-                <MDBCardBody>
-                  <MDBRow>
-                    <MDBCol sm="12" md={{ size: 9, offset: 1 }} className="mb-4">
-                      <MDBCardText className="text-muted">
-                        <b>Licenca za sudskog tumača za engleski jezik</b> dodijeljena mi je od strane Ministarstva pravde Crne Gore 1991. godine, od kada sam kontinuirano obnavljala svoju licencu i unapređivala svoje vještine, kako kroz rad sa klijentima, tako i kroz dodatnu obuku.
-                      </MDBCardText>
-                    </MDBCol>
-                  </MDBRow>
-  
-                  <MDBRow>
-                    <MDBCol sm="12" md={{ size: 9, offset: 1 }} className="mb-4">
-                      <h5 className="text-center"><b>Institucije i organizacije</b></h5>
-                      <MDBListGroup>
-                        <MDBListGroupItem className="text-muted">
-                        Članica sam <b>Udruženja sudskih tumača Crne Gore</b> i <b>Udruženja konferencijskih prevodilaca Crne Gore (AMIC)</b>.
-                        </MDBListGroupItem>
-                        <MDBListGroupItem className="text-muted">
-                        Sarađivala sam brojnim ministarstvima Vlade Crne Gore, vladinim i nevladinim organizacijama, institucijama, agencijama i institutima, domaćim i stranim udruženjima, međunarodnim donatorskim organizacijama (USAID, OEBS, IOM, Delegacija EU u Crnoj Gori, Svjetska banka, IFC, GTZ, agencije Ujedinjenih nacija u Crnoj Gori, Svjetska zdravstvena organizacija, Svjetska carinska organizacija, Svjetska trgovinska organizacija, itd.), međunarodnim i domaćim bankama, lokalnim samoupravama, više fakulteta Univerziteta Crne Gore, organima sudske vlasti, domaćim i stranim konsultantskim kućama, domaćim i stranim privatnim preduzećima, građevinskim firmama, advokatskim kancelarijama, agencijama za nekretnine, biltenima, prevodilačkim agencijama, domaćim i stranim fizičkim licima, itd.
-                        </MDBListGroupItem>
-                      </MDBListGroup>
-                    </MDBCol>
-                  </MDBRow>
-  
-                  <MDBRow>
-                    <MDBCol sm="12" md={{ size: 9, offset: 1 }}>
-                      <MDBCardText className="text-muted">
-                        Moj rad uključuje i projekte u oblasti evropskih integracija, u kojima sam učestvovala kao prevodilac i članica radne grupe Ministarstva evropskih integracija Crne Gore za izradu priručnika za prevođenje pravne tekovine Evropske unije (Acquis communautaire).
-                      </MDBCardText>
-                    </MDBCol>
-                  </MDBRow>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
-    );
-  };
-  
+
+      <MDBContainer>
+
+        {/* HERO SEKCIJA */}
+        <MDBCard className="mb-5 shadow-sm border-0">
+          <MDBCardBody className="d-flex flex-column flex-md-row align-items-center text-center text-md-start p-4">
+            <MDBCardImage
+              src={UserIcon}
+              alt="Dragana Petronijević"
+              className="rounded-circle mb-3 mb-md-0 me-md-4"
+              style={{ width: '170px', height: '170px', objectFit: 'cover' }}
+              fluid
+            />
+            <div>
+              <h2 className="fw-bold mb-2">Dragana Petronijević</h2>
+              <p className="text-muted mb-3 fs-5">
+                Sudski tumač i prevodilac za engleski jezik sa više od 30 godina iskustva.
+              </p>
+              <MDBCardText className="about-text">
+                Diplomirala sam na Filološkom fakultetu Univerziteta u Sarajevu,
+                gdje sam stekla stručni naziv profesora engleskog jezika i književnosti.
+              </MDBCardText>
+            </div>
+          </MDBCardBody>
+        </MDBCard>
+
+        {/* LICENCA */}
+        <MDBCard className="mb-5 shadow-sm border-0">
+          <MDBCardBody className="p-4">
+            <h3 className="fw-bold text-center mb-4">
+              Profesionalna licenca
+            </h3>
+
+            <MDBCardText className="about-text text-muted text-center">
+              Licenca za sudskog tumača za engleski jezik dodijeljena mi je od
+              strane Ministarstva pravde Crne Gore 1991. godine, od kada
+              kontinuirano obnavljam svoju licencu i unapređujem svoje vještine
+              kroz rad sa klijentima i dodatnu stručnu obuku.
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+
+        {/* INSTITUCIJE */}
+        <MDBCard className="shadow-sm border-0">
+          <MDBCardBody className="p-4">
+            <h3 className="fw-bold text-center mb-4">
+              Institucije i organizacije
+            </h3>
+
+            <MDBListGroup flush>
+              <MDBListGroupItem className="about-text text-muted">
+                ✓ Članica Udruženja sudskih tumača Crne Gore i
+                Udruženja konferencijskih prevodilaca Crne Gore (AMIC)
+              </MDBListGroupItem>
+
+              <MDBListGroupItem className="about-text text-muted">
+                ✓ Saradnja sa ministarstvima, državnim institucijama i
+                organima sudske vlasti
+              </MDBListGroupItem>
+
+              <MDBListGroupItem className="about-text text-muted">
+                ✓ Rad sa međunarodnim organizacijama (EU, USAID, OEBS, IOM,
+                Svjetska banka, UN agencije i dr.)
+              </MDBListGroupItem>
+
+              <MDBListGroupItem className="about-text text-muted">
+                ✓ Saradnja sa bankama, univerzitetima, advokatskim
+                kancelarijama i privatnim kompanijama
+              </MDBListGroupItem>
+            </MDBListGroup>
+
+            <MDBCardText className="about-text text-muted mt-4 text-center">
+              Učestvovala sam i u projektima evropskih integracija kao
+              prevodilac i članica radne grupe za izradu priručnika za
+              prevođenje pravne tekovine Evropske unije (Acquis communautaire).
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+
+      </MDBContainer>
+    </section>
+  );
+};

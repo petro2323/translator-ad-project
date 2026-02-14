@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -14,12 +14,12 @@ export const AppRoutes = () => {
             <Header />
 
             <Routes>
-                <Route path="nepoznato" element={<NotFoundPage />} />
                 <Route path="/" element={<IndexPage />} />
                 <Route path="o-meni" element={<AboutMePage />} />
                 <Route path="kontakt" element={<ContactPage />} />
                 <Route path="usluge-prevodjenja" element={<TranslationServicesPage /> }/>
                 <Route path="cjenovnik" element={<PricePage /> }/>
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
 
             <Footer />
