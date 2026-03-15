@@ -14,8 +14,8 @@ const Header = () => {
   const offsetValue = window.innerWidth <= 1024 ? -400 : 0;
 
   const handleScrollToSection = (section) => {
-    if (location.pathname !== "/usluge-prevodjenja") {
-      navigate("/usluge-prevodjenja");
+    if (location.pathname !== "/usluge-prevodjenja/") {
+      navigate("/usluge-prevodjenja/");
       setTimeout(() => {
         scroller.scrollTo(section, {
           duration: 0,
@@ -35,8 +35,8 @@ const Header = () => {
   };
 
   const handleNavigateToServices = () => {
-    if (location.pathname !== "/usluge-prevodjenja") {
-      navigate("/usluge-prevodjenja");
+    if (location.pathname !== "/usluge-prevodjenja/") {
+      navigate("/usluge-prevodjenja/");
     } else {
       window.scrollTo({
           top: 0,
@@ -89,9 +89,9 @@ const Header = () => {
               <NavDropDown.Item onClick={() => handleItemClick("neovjereni-prevod")} className='nav-dropdown-item'>Neovjereni prevod</NavDropDown.Item>
               <NavDropDown.Item onClick={() => handleItemClick("strucni-prevodi")} className='nav-dropdown-item'>Stručni prevodi</NavDropDown.Item>
             </NavDropDown>
-            <Nav.Link as={NavLink} to="/cjenovnik" onClick={() => setExpanded(false)}>Cjenovnik</Nav.Link>
-            <Nav.Link as={NavLink} to="/o-meni" onClick={() => setExpanded(false)}>O meni</Nav.Link>
-            <Nav.Link as={NavLink} to="/kontakt" onClick={() => setExpanded(false)}>Kontakt</Nav.Link>
+            <Nav.Link as={NavLink} to="/cjenovnik/" onClick={() => setExpanded(false)}>Cjenovnik</Nav.Link>
+            <Nav.Link as={NavLink} to="/o-meni/" onClick={() => setExpanded(false)}>O meni</Nav.Link>
+            <Nav.Link as={NavLink} to="/kontakt/" onClick={() => setExpanded(false)}>Kontakt</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
