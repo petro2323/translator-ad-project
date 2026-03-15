@@ -31,7 +31,7 @@ export const IndexPage = () => {
             </p>
 
             <div className="d-flex justify-content-center">
-                <NavLink to="/kontakt" className="btn btn-outline-primary">Kontaktirajte me</NavLink>
+                <NavLink to="/kontakt/" className="btn btn-outline-primary">Kontaktirajte me</NavLink>
             </div>
           </MDBCol>
         </MDBRow>
@@ -46,7 +46,7 @@ export const IndexPage = () => {
                 Brze i precizne usluge prevođenja svih vrsta tekstova, dokumenata i audio materijala
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
-                <NavLink to="/usluge-prevodjenja" className="btn btn-outline-primary">Saznajte više</NavLink>
+                <NavLink to="/usluge-prevodjenja/" className="btn btn-outline-primary">Saznajte više</NavLink>
                 </div>
               </MDBCardBody>
             </MDBCard>
@@ -60,7 +60,7 @@ export const IndexPage = () => {
                 Pristupačne cijene i fleksibilni paketi za širok spektar prevodilačkih usluga  
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
-                <NavLink to="/cjenovnik" className="btn btn-outline-primary">Saznajte više</NavLink>
+                <NavLink to="/cjenovnik/" className="btn btn-outline-primary">Saznajte više</NavLink>
                 </div>
               </MDBCardBody>
             </MDBCard>
@@ -79,7 +79,7 @@ export const IndexPage = () => {
                 Iskusan prevodilac i sudski tumač za engleski jezik sa više od 30 godina iskustva
                 </MDBCardText>
                 <div className="d-flex justify-content-center">
-                <NavLink to="/o-meni" className="btn btn-outline-primary">Saznajte više</NavLink>
+                <NavLink to="/o-meni/" className="btn btn-outline-primary">Saznajte više</NavLink>
                 </div>
               </MDBCardBody>
             </MDBCard>

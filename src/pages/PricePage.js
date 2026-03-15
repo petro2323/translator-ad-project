@@ -97,7 +97,7 @@ export const PricePage = () => {
                         <br />
                         <MDBRow>
                             <MDBCol>
-                                <MDBCardText className="text-muted"><b>Za visinu nagrade u konkretnom slučaju, obratite se <NavLink to="/kontakt" className="text-decoration-underline">telefonom ili putem e-pošte.</NavLink></b></MDBCardText>
+                                <MDBCardText className="text-muted"><b>Za visinu nagrade u konkretnom slučaju, obratite se <NavLink to="/kontakt/" className="text-decoration-underline">telefonom ili putem e-pošte.</NavLink></b></MDBCardText>
                             </MDBCol>
                         </MDBRow>
                     </MDBCardBody>
